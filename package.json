@@ -1,0 +1,14 @@
+{
+  "name": "purplekiwi",
+  "version": "1.0.0",
+  "description": "Budgeting Webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roberto",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

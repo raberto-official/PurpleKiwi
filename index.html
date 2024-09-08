@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Kiwi</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body data-bs-theme="dark">
+    <header>
+        <nav class="navbar " data-bs-theme="dark" style="background-color: blueviolet;">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Purple Kiwi</a>
+              
+<!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary bg-white btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: blueviolet">Got something to add?</button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add New Entry</h1>
+                    <!-- Modal Button -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Form for New Entry -->
+                        <form class="row gy-2 gx-3 align-items-center">
+                            <!-- Date -->
+                             <div class="col-auto">
+                                <label for="autoSizingInput" class="visually-hidden">Date</label>
+                                <input type="date" name="date" id="autoSizingInput" class="form-control">
+                             </div>
+                            <!-- Description -->
+                            <div class="col-auto">
+                              <label class="visually-hidden" for="autoSizingInput">Description</label>
+                              <input type="text" class="form-control" id="autoSizingInput" placeholder="Description">
+                            </div>
+                            <!-- Amount -->
+                            <div class="col-auto">
+                              <label class="visually-hidden" for="autoSizingInputGroup">Amount</label>
+                              <div class="input-group">
+                                <div class="input-group-text">$</div>
+                                <input type="number" class="form-control" id="autoSizingInputGroup" placeholder="Amount">
+                              </div>
+                            </div>
+                            <!-- Income or Debit -->
+                            <div class="col-auto">
+                              <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                              <select class="form-select" id="autoSizingSelect">
+                                <option selected disabled style="display: none;">Income or Debit</option>
+                                <option value="income">Income</option>
+                                <option value="debit">Debit</option>
+                              </select>
+                            </div>
+                            <!-- Payment Method -->
+                            <div class="col-auto">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                <label class="form-check-label" for="autoSizingCheck">
+                                    Not sure How but want this to be Payment Method
+                                </label>
+                              </div>
+                            </div>
+                            <!-- Submit button -->
+                            <div class="col-auto">
+                              <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </form>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Add Entry</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container expensestitle p-4">
+            <h2 class="h2">Expenses</h2>
+            <p>No JavaScript has been added looking forward to making this useful</p>
+        </div>
+        <div class="container-sm ">
+            <table class="table table-striped table-hover border">
+                <thead>
+                  <tr>
+                    <th scope="col">Date</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Debit Or Credit</th>
+                    <th scope="col">Payment Method</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Method</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Method</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                    <td>Method</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
