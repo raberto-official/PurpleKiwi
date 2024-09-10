@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purple Kiwi</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body data-bs-theme="dark">
     <header>
@@ -26,16 +26,16 @@
                     </div>
                     <div class="modal-body">
                         <!-- Form for New Entry -->
-                        <form class="row gy-2 gx-3 align-items-center">
+                        <form class="row gy-2 gx-3 align-items-center modalForm">
                             <!-- Date -->
                              <div class="col-auto">
                                 <label for="autoSizingInput" class="visually-hidden">Date</label>
-                                <input type="date" name="date" id="autoSizingInput" class="form-control">
+                                <input type="date" name="date" id="autoSizingInput" class="form-control DateEntry">
                              </div>
                             <!-- Description -->
                             <div class="col-auto">
                               <label class="visually-hidden" for="autoSizingInput">Description</label>
-                              <input type="text" class="form-control" id="autoSizingInput" placeholder="Description">
+                              <input type="text" class="form-control" id="autoSizingInput descEntry" placeholder="Description">
                             </div>
                             <!-- Amount -->
                             <div class="col-auto">
@@ -48,7 +48,7 @@
                             <!-- Income or Debit -->
                             <div class="col-auto">
                               <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                              <select class="form-select" id="autoSizingSelect">
+                              <select class="form-select" id="autoSizingSelect incomeOrDebitEntry">
                                 <option selected disabled style="display: none;">Income or Debit</option>
                                 <option value="income">Income</option>
                                 <option value="debit">Debit</option>
@@ -57,22 +57,20 @@
                             <!-- Payment Method -->
                             <div class="col-auto">
                               <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                                <input class="form-check-input" type="checkbox" id="autoSizingCheck paymentMethodEntry">
                                 <label class="form-check-label" for="autoSizingCheck">
                                     Not sure How but want this to be Payment Method
                                 </label>
                               </div>
                             </div>
-                            <!-- Submit button -->
-                            <div class="col-auto">
-                              <button type="submit" class="btn btn-primary">Submit</button>
-                            </div>
-                          </form>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Add Entry</button>
-                    </div>
+                          <!-- </form> -->
+                        </div>
+                        <div class="modal-footer">
+                        <!-- Modal Buttons -->
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary addEntryButton">Add Entry</button>
+                        </div>
+                      </form>
                 </div>
                 </div>
             </div>
@@ -82,18 +80,20 @@
           </nav>
     </header>
     <main>
+      <!-- Expenses Title -->
         <div class="container expensestitle p-4">
             <h2 class="h2">Expenses</h2>
             <p>No JavaScript has been added looking forward to making this useful</p>
         </div>
+        <!-- Expenses Table -->
         <div class="container-sm ">
-            <table class="table table-striped table-hover border">
+            <table class="table table-striped table-hover border expensesTable">
                 <thead>
                   <tr>
                     <th scope="col">Date</th>
                     <th scope="col">Description</th>
                     <th scope="col">Amount</th>
-                    <th scope="col">Debit Or Credit</th>
+                    <th scope="col">Income or Debit</th>
                     <th scope="col">Payment Method</th>
                   </tr>
                 </thead>
@@ -126,6 +126,7 @@
     <footer>
 
     </footer>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/JavaScript/common.js"></script>
 </body>
 </html>
