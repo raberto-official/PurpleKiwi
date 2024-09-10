@@ -26,11 +26,11 @@
                     </div>
                     <div class="modal-body">
                         <!-- Form for New Entry -->
-                        <form class="row gy-2 gx-3 align-items-center modalForm">
+                        <form class="row gy-2 gx-3 align-items-center modalForm" action="">
                             <!-- Date -->
                              <div class="col-auto">
                                 <label for="autoSizingInput" class="visually-hidden">Date</label>
-                                <input type="date" name="date" id="autoSizingInput" class="form-control DateEntry">
+                                <input type="date" name="date" id="autoSizingInput DateEntry" class="form-control">
                              </div>
                             <!-- Description -->
                             <div class="col-auto">
@@ -68,7 +68,7 @@
                         <div class="modal-footer">
                         <!-- Modal Buttons -->
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary addEntryButton">Add Entry</button>
+                        <button type="button" class="btn btn-primary" id="addEntryButton">Add Entry</button>
                         </div>
                       </form>
                 </div>
@@ -87,39 +87,20 @@
         </div>
         <!-- Expenses Table -->
         <div class="container-sm ">
-            <table class="table table-striped table-hover border expensesTable">
-                <thead>
+            <table class="table table-striped table-hover border" id="expensesTable">
+                <!-- <thead> -->
                   <tr>
                     <th scope="col">Date</th>
                     <th scope="col">Description</th>
                     <th scope="col">Amount</th>
                     <th scope="col">Income or Debit</th>
                     <th scope="col">Payment Method</th>
+                    <th scope="col">Balance</th>
                   </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                    <td>Method</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                    <td>Method</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                    <td>Method</td>
-                  </tr>
-                  
-                </tbody>
+                <!-- </thead> -->
+                <!-- <tbody>
+
+                </tbody> -->
               </table>
         </div>
     </main>
